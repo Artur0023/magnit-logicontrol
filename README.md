@@ -27,7 +27,7 @@
 
 
 ## Архитектура проекта
-
+```text
 magnit-logicontrol
 │
 ├── data_platform      # Генерация данных + БД (как prod-слой)
@@ -49,7 +49,7 @@ magnit-logicontrol
 ├── scripts             # ETL / генерация данных
 ├── data                # SQLite + CSV
 └── README.md
-
+```
 
 ## Данные и платформа (data_platform)
 # Что реализовано:
