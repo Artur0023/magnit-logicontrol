@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Ключевые показатели</h2>
+
+<div class="kpi">
+    <div class="card">Средний DOH: {{ kpi.avg_doh }}</div>
+    <div class="card">HIGH OOS: {{ kpi.high_oos_share }}%</div>
+    <div class="card">SLA поставок: {{ kpi.sla_rate }}%</div>
+    <div class="card">Средняя задержка: {{ kpi.avg_delay }} дн</div>
+</div>
+{% endblock %}

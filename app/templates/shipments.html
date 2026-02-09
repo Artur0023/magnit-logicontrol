@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>SLA поставщиков</h2>
+
+<table>
+    <tr>
+        <th>Поставщик</th>
+        <th>SLA %</th>
+        <th>Средняя задержка (дн)</th>
+        <th>Кол-во поставок</th>
+    </tr>
+    {% for row in suppliers %}
+    <tr>
+        <td>{{ row.supplier }}</td>
+        <td>{{ (row.sla_rate * 100) | round(1) }}</td>
+        <td>{{ row.avg_delay | round(1) }}</td>
+        <td>{{ row.shipments }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+sqlalchemy
+sqlite-utils
+jupyter
+telebot
+python-dotenv
+flask
+

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>SKU с риском Out-of-Stock</h2>
+
+<table>
+    <tr>
+        <th>РЦ</th>
+        <th>SKU</th>
+        <th>Средний DOH</th>
+        <th>Дней в HIGH OOS</th>
+    </tr>
+    {% for row in oos %}
+    <tr>
+        <td>{{ row.dc_id }}</td>
+        <td>{{ row.sku_id }}</td>
+        <td>{{ row.avg_doh | round(2) }}</td>
+        <td>{{ row.days_high_oos }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
